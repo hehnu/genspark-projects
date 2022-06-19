@@ -21,7 +21,7 @@ public class Game {
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Howdy, Welcome to Helicopter Hangman! Help! Don't let Hangman fly away before guessing the secret word! ");
-        File usa2 = new File("/Users/niagriffin/Desktop/genspark-projects/Hangman/src/usa2.txt");
+        File usa2 = new File("~/genspark-projects/Hangman/src/usa2.txt");
         Scanner wordScanner = new Scanner(usa2);
         Scanner input = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<>();
