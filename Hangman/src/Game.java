@@ -21,7 +21,7 @@ public class Game {
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Howdy, Welcome to Helicopter Hangman! Help! Don't let Hangman fly away before guessing the secret word! ");
-        File usa2 = new File("~/genspark-projects/Hangman/src/usa2.txt");
+        File usa2 = new File("/Users/niagriffin/Desktop/genspark-projects/Hangman/src/usa2.txt");
         Scanner wordScanner = new Scanner(usa2);
         Scanner input = new Scanner(System.in);
         ArrayList<String> words = new ArrayList<>();
@@ -85,8 +85,8 @@ public class Game {
         System.out.println("The secret word is: " + hidden);
 
     }
-    public static void drawHangman(int t) {
-        if (t == 8) {
+    public static void drawHangman(int tries) {
+        if (tries == 8) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -100,7 +100,7 @@ public class Game {
             System.out.println(".................");
             System.out.println(".................");
             System.out.println(".................");
-        }else if (t == 7) {
+        }else if (tries == 7) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -114,7 +114,7 @@ public class Game {
             System.out.println(".................");
             System.out.println(".................");
             System.out.println(".................");
-        } else if (t == 6) {
+        } else if (tries == 6) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -128,7 +128,7 @@ public class Game {
             System.out.println(".................");
             System.out.println(".................");
             System.out.println(".................");
-        } else if (t == 5) {
+        } else if (tries == 5) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -142,7 +142,7 @@ public class Game {
             System.out.println(".................");
             System.out.println(".................");
             System.out.println(".................");
-        } else if (t == 4) {
+        } else if (tries == 4) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -156,7 +156,7 @@ public class Game {
             System.out.println("    ╬═╬☻ ");
             System.out.println(".................");
             System.out.println(".................");
-        } else if (t == 3) {
+        } else if (tries == 3) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -170,7 +170,7 @@ public class Game {
             System.out.println("    ╬═╬☻/ ");
             System.out.println(".................");
             System.out.println(".................");
-        } else if (t == 2) {
+        } else if (tries == 2) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
@@ -185,7 +185,7 @@ public class Game {
             System.out.println("    ╬═╬/ ");
             System.out.println(".................");
 
-        } else if(t==1) {
+        } else if(tries==1) {
             System.out.println("  ▬▬▬.◙.▬▬▬");
             System.out.println("  ═▂▄▄▓▄▄▂");
             System.out.println("◢◤ █▀▀████▄▄▄▄◢◤");
